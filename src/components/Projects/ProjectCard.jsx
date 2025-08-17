@@ -8,7 +8,7 @@ const ProjectCard = ({ project }) => {
       <h3 className="text-lg font-bold">{project.title}</h3>
       <p className="text-gray-600 text-sm">{project.description}</p>
       <div className="flex flex-wrap gap-2 mt-2">
-        {project.tags.map((tag, index) => (
+        {project.technologies.map((tag, index) => (
           <span key={index} className="bg-gray-200 px-2 py-1 rounded-lg text-xs">
             {tag}
           </span>
