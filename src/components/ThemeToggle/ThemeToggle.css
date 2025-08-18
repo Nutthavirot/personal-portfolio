@@ -20,3 +20,7 @@
 .theme-toggle:active {
   transform: scale(0.95);
 }
+.button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}

@@ -1,6 +1,7 @@
 // src/App.jsx
 import { useEffect } from 'react';
 import { ThemeProvider } from './contexts/ThemeContext';
+import { Helmet } from 'react-helmet';
 import Header from './components/Header/Header';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
@@ -26,6 +27,10 @@ function App() {
   return (
     <ThemeProvider>
       <div className="App">
+        <Helmet>
+          <title>Nutthavirot Portfolio</title>
+          <meta name="description" content="Portfolio of Nutthavirot, Frontend Developer" />
+        </Helmet>
         <Header />
         <main>
           <About />
