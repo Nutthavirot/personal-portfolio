@@ -98,4 +98,12 @@
     padding: 0.5rem 0;
     font-size: 1.1rem;
   }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
 }

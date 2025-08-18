@@ -7,6 +7,7 @@ import { projects } from '../../data/portfolioData';
 function Projects() {
     const [filter, setFilter] = useState('all');
     const scrollRef = useRef(null);
+    const [loading, setLoading] = useState(false);
     const scroll = (dir) => scrollRef.current?.scrollBy({ left: dir === 'left' ? -350 : 350, behavior: 'smooth' });
     // Get unique technologies for filter
     const technologies = ['all', ...new Set(
@@ -45,7 +46,11 @@ function Projects() {
                 </div>
 
                 <div className="projects-grid" ref={scrollRef}>
-                    {filteredProjects.map((p, i) => <ProjectCard key={i} project={p} />)}
+                    {loading ? (
+                        <p className="loading-text">Loading...</p> // ✅ แสดง loading
+                    ) : (
+                    filteredProjects.map((p, i) => <ProjectCard key={i} project={p} />)
+                )}
                 </div>
             </div>
         </section>
