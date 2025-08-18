@@ -3,6 +3,7 @@ import Weather from "../assets/images/Weather-App.jpg"
 import my_to_do from "../assets/images/my_to-do_app.jpg" 
 import portfolio_website from "../assets/images/portfolio-website.jpg" 
 import portfolio_website_team from "../assets/images/Portfolio_Website_Team.jpg"
+
 export const projects = [
     {
         id: 1,
