@@ -155,7 +155,13 @@ function Contact() {
               <Mail size={24} />
               <div>
                 <h4>Email</h4>
-                <p>your.email@example.com</p>
+                <p>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=Jtakung@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >voltvolt.nut@gmail.com</a>
+                </p>
               </div>
             </div>
             
@@ -163,7 +169,7 @@ function Contact() {
               <Phone size={24} />
               <div>
                 <h4>Phone</h4>
-                <p>+66 XX XXX XXXX</p>
+                <p>+66 88 888 8888</p>
               </div>
             </div>
             
@@ -171,7 +177,7 @@ function Contact() {
               <MapPin size={24} />
               <div>
                 <h4>Location</h4>
-                <p>Bangkok, Thailand</p>
+                <p>Chiang Rai, Thailand</p>
               </div>
             </div>
             
