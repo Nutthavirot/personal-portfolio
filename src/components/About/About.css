@@ -3,14 +3,18 @@
   background: var(--bg-secondary);
 }
 
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
 .about-content {
-  width: 100vw; /* ใช้เต็มความกว้างหน้าจอ */
-  min-height: 100vh; /* ให้เต็มความสูงหน้าจอ */
-  padding: 4rem 2rem; /* ปรับ padding ตามต้องการ */
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
   align-items: center;
-  justify-content: center;
-  background-color: var(--bg-secondary); /* สีพื้นหลัง */
 }
 
 .section-title {
@@ -49,8 +53,7 @@
 }
 
 .skill-item:hover {
-  transform: translateY(-3px) scale(1.03);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
 }
 
 .skill-icon {
@@ -124,5 +127,16 @@
   .image-placeholder {
     width: 250px;
     height: 250px;
+  }
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 500px;
+}
+
+@media (max-width: 768px) {
+  .profile-image {
+    max-width: 300px;
   }
 }
